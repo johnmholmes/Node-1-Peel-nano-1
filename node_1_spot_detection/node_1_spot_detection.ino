@@ -2,7 +2,7 @@
 
 #define CMRI_ADDR 1 //CMRI node address in JMRI
 
-// Define CMRI connection with 24 inputs and 64 outputs
+// Define CMRI connection with 24 inputs and 64 outputs no need for outputs in this case
 CMRI cmri(CMRI_ADDR, 24, 64);
 
 void setup() {
