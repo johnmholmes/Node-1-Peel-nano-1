@@ -16,9 +16,9 @@ I do not need the Auto485 library for this to work. other RS485 modules availabl
 
 #define CMRI_ADDR 1                    //CMRI node address in JMRI
 
-// Define CMRI connection with 16 inputs and 24 outputs no need for outputs in this case
+// Define CMRI connection with 16 inputs and 32 outputs no need for outputs in this case
 
-CMRI cmri(CMRI_ADDR, 16, 24);
+CMRI cmri(CMRI_ADDR, 16, 32);
 
 void setup() {
   
