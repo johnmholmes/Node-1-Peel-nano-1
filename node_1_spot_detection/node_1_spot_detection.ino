@@ -14,35 +14,36 @@ I do not need the Auto485 library for this to work. other RS485 modules availabl
 
 #include <CMRI.h>
 
-#define CMRI_ADDR 1 //CMRI node address in JMRI
+#define CMRI_ADDR 1                    //CMRI node address in JMRI
 
 // Define CMRI connection with 16 inputs and 24 outputs no need for outputs in this case
+
 CMRI cmri(CMRI_ADDR, 16, 24);
 
 void setup() {
   
-  Serial.begin(19200);                     // Make sure this value is set in JMRI for this node
+  Serial.begin(19200);                 // Make sure this value is set in JMRI for this node
   
-    pinMode(2, INPUT_PULLUP);
-    pinMode(3, INPUT_PULLUP);
-    pinMode(4, INPUT_PULLUP);
-    pinMode(5, INPUT_PULLUP);
-    pinMode(6, INPUT_PULLUP);
-    pinMode(7, INPUT_PULLUP);
-    pinMode(8, INPUT_PULLUP);
-    pinMode(9, INPUT_PULLUP);
-    pinMode(10, INPUT_PULLUP);
-    pinMode(11, INPUT_PULLUP);
-    pinMode(12, INPUT_PULLUP);
+    pinMode(2, INPUT_PULLUP);          //S1
+    pinMode(3, INPUT_PULLUP);          //S2
+    pinMode(4, INPUT_PULLUP);          //S3
+    pinMode(5, INPUT_PULLUP);          //S4
+    pinMode(6, INPUT_PULLUP);          //S5
+    pinMode(7, INPUT_PULLUP);          //S6
+    pinMode(8, INPUT_PULLUP);          //S7
+    pinMode(9, INPUT_PULLUP);          //S8
+    pinMode(10, INPUT_PULLUP);         //S9
+    pinMode(11, INPUT_PULLUP);         //S10
+    pinMode(12, INPUT_PULLUP);         //S11
 
-    pinMode(A0, INPUT_PULLUP);
-    pinMode(A1, INPUT_PULLUP);
-    pinMode(A2, INPUT_PULLUP);
-    pinMode(A3, INPUT_PULLUP);
-    pinMode(A4, INPUT_PULLUP);
-    pinMode(A5, INPUT_PULLUP);             // not used
-    pinMode(A6, INPUT_PULLUP);             // not used
-    pinMode(A6, INPUT_PULLUP);             // not used
+    pinMode(A0, INPUT_PULLUP);         //S12
+    pinMode(A1, INPUT_PULLUP);         //S13
+    pinMode(A2, INPUT_PULLUP);         //S14
+    pinMode(A3, INPUT_PULLUP);         //S15
+    pinMode(A4, INPUT_PULLUP);         //S16
+    pinMode(A5, INPUT_PULLUP);         // not used
+    pinMode(A6, INPUT_PULLUP);         // not used
+    pinMode(A6, INPUT_PULLUP);         // not used
     
 }
 
@@ -64,7 +65,7 @@ void loop(){
    cmri.set_bit(11, !digitalRead(A0)); // S12 = address 1012 in JMRI  
    cmri.set_bit(12, !digitalRead(A1)); // S13 = address 1013 in JMRI 
    cmri.set_bit(13, !digitalRead(A2)); // S14 = address 1014 in JMRI
-   cmri.set_bit(14, !digitalRead(A3)); // S14 = address 1015 in JMRI
-   cmri.set_bit(15, !digitalRead(A4)); // S14 = address 1016 in JMRI
+   cmri.set_bit(14, !digitalRead(A3)); // S15 = address 1015 in JMRI
+   cmri.set_bit(15, !digitalRead(A4)); // S16 = address 1016 in JMRI
 }
    
