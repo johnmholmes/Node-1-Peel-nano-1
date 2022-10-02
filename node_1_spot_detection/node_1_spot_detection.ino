@@ -1,3 +1,17 @@
+/*
+This sketch is here for demonstration purposes only feel free to try it out at your own risk. 
+It has been tested on a Arduino Nano and the RS485 module I use and a USB cable. 
+
+The JMRI address for the Node is 1 and the individual pin address is shown as a comment.
+
+You will need to set the baud rate in JMRI to match this Node.
+
+I would also advise choose a baud rate for all the nodes to be the same.
+
+I do not need the Auto485 library for this to work. other RS485 modules available will require this library.
+*/
+
+
 #include <CMRI.h>
 
 #define CMRI_ADDR 1 //CMRI node address in JMRI
