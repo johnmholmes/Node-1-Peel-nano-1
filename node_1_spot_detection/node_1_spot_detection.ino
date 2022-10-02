@@ -27,9 +27,9 @@ void setup() {
           pinMode(i, INPUT_PULLUP);        // define sensor shield pins 2 to 13 as inputs
         } 
 
+    pinMode(A0, INPUT_PULLUP);
     pinMode(A1, INPUT_PULLUP);
-    pinMode(A1, INPUT_PULLUP);
-    pinMode(A2, INPUT_PULLUP);
+    pinMode(A2, INPUT_PULLUP);             // not used
     pinMode(A3, INPUT_PULLUP);             // not used
     pinMode(A4, INPUT_PULLUP);             // not used
     pinMode(A5, INPUT_PULLUP);             // not used
