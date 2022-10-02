@@ -23,7 +23,7 @@ void setup() {
   
   Serial.begin(19200);                     // Make sure this value is set in JMRI for this node
   
-  for (int i=2; i<13; i++)  {
+  for (int i=2; i<14; i++)  {
           pinMode(i, INPUT_PULLUP);        // define sensor shield pins 2 to 13 as inputs
         } 
 
