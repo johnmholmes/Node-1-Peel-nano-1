@@ -41,19 +41,19 @@ void setup() {
 void loop(){
    cmri.process();
 
-   cmri.set_bit(0, !digitalRead(3));   // S1 = address 1001 in JMRI
-   cmri.set_bit(1, !digitalRead(4));   
-   cmri.set_bit(2, !digitalRead(5));   
-   cmri.set_bit(3, !digitalRead(6));   
-   cmri.set_bit(4, !digitalRead(7));   
-   cmri.set_bit(5, !digitalRead(8));   
-   cmri.set_bit(6, !digitalRead(9));   
-   cmri.set_bit(7, !digitalRead(10));  
-   cmri.set_bit(8, !digitalRead(11));  
-   cmri.set_bit(9, !digitalRead(12));   
-   cmri.set_bit(10, !digitalRead(13));
-   cmri.set_bit(10, !digitalRead(A0));  
-   cmri.set_bit(11, !digitalRead(A1)); 
-   cmri.set_bit(12, !digitalRead(A2));  // S16 = address 1016 in JMRI
+   cmri.set_bit(0, !digitalRead(2));   // S1 = address 1001 in JMRI
+   cmri.set_bit(1, !digitalRead(3));   
+   cmri.set_bit(2, !digitalRead(4));   
+   cmri.set_bit(3, !digitalRead(5));   
+   cmri.set_bit(4, !digitalRead(6));   
+   cmri.set_bit(5, !digitalRead(7));   
+   cmri.set_bit(6, !digitalRead(8));   
+   cmri.set_bit(7, !digitalRead(9));  
+   cmri.set_bit(8, !digitalRead(10));  
+   cmri.set_bit(9, !digitalRead(11));   
+   cmri.set_bit(10, !digitalRead(12));
+   cmri.set_bit(11, !digitalRead(13));  
+   cmri.set_bit(12, !digitalRead(A0)); 
+   cmri.set_bit(13, !digitalRead(A1));  // S16 = address 1016 in JMRI
 }
    
