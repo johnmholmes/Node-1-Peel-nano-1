@@ -9,3 +9,6 @@ Pin 13 I have left out as this has the built in LED on it.
 
 # The sketch is here for reference purposes only and only works with C/MRI using a USB lead or the module I use.
 
+Node 2 has been added as its the same could with the Address change to 2 and sensor range is 17 to 32
+
+There will also be a node 3 which will complete all the spot detection I need for the layout.
