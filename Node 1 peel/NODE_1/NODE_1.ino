@@ -17,7 +17,7 @@
 #define turnout1ClosedPosition 70
 #define turnout1ThrownPosition 108
 
-// define signal leds turnout 1 pins 0 and 1 rx & tx
+// define signal leds turnout 1 pins 0 and 1 rx & tx ADDRESS 1001 USED FOR BIT STATE OF TURNOUT
 #define throughApproachGreenLed 4                 //jmri 1002
 #define throughApproachRedLed 5                   //1003
 #define divergingApproachGreenLed 6               //1004
