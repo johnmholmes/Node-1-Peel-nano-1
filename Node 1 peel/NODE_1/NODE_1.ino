@@ -34,7 +34,6 @@
 #define Sensor3 A2                               //jmri 1004
 #define Sensor4 A3                               //jmri 1005
 #define Sensor5 A4                               //jmri 1006
-#define Sensor6 A5                               //jmri 1007
 
 //setup themove speed of servo
 #define turnoutMoveSpeed 20   // [ms] lower number is faster
@@ -67,8 +66,7 @@ void setup() {
   pinMode(Sensor3, INPUT_PULLUP);
   pinMode(Sensor4, INPUT_PULLUP);
   pinMode(Sensor5, INPUT_PULLUP);
-  pinMode(Sensor6, INPUT_PULLUP);
-  
+    
 
   digitalWrite(throughApproachGreenLed, LOW);  // light led 1 on start up  to show its working
   delay(2000);
@@ -110,7 +108,7 @@ void loop() {
   cmri.set_bit(3, !digitalRead(A2));                                        //jmri 1004
   cmri.set_bit(4, !digitalRead(A3));                                        //jmri 1005
   cmri.set_bit(5, !digitalRead(A4));                                        //jmri 1006
-  cmri.set_bit(6, !digitalRead(A4));                                        //jmri 1007
+  
 
   if (turnout1Position != turnout1Target) {
     if (millis() > turnoutMoveDelay) {
