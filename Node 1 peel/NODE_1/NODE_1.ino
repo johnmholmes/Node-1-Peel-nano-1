@@ -18,14 +18,14 @@
 #define turnout1ThrownPosition 108
 
 // define signal leds turnout 1 pins 0 and 1 rx & tx
-#define throughApproachGreenLed 2                 //jmri 1002
-#define throughApproachRedLed 3                   //1003
-#define divergingApproachGreenLed 4               //1004
-#define divergingApproachRedLed 5                 //1005
-#define throughGreenLed 6                         //1006
-#define throughRedLed 7                           //1007
+#define throughApproachGreenLed 4                 //jmri 1002
+#define throughApproachRedLed 5                   //1003
+#define divergingApproachGreenLed 6               //1004
+#define divergingApproachRedLed 7                 //1005
+#define throughGreenLed 8                         //1006
+#define throughRedLed 9                           //1007
 
-// Spare pins at the moment 8 to 13 5 And A6 & A7 in total
+// Spare pins at the moment 3 10 to 13 And A6 & A7 in total
 
 
 //define infrared detection peel as inputs
@@ -73,7 +73,7 @@ void setup() {
   digitalWrite(throughApproachGreenLed, LOW);  // light led 1 on start up  to show its working
   delay(2000);
   digitalWrite(throughApproachGreenLed, HIGH);
-  turnOut1.attach(3);
+  turnOut1.attach(2);
   turnOut1.write(turnout1ClosedPosition);
 
 
