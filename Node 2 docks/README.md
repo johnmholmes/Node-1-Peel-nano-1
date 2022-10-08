@@ -1,14 +1,6 @@
-# Node 1 Peel turnout and signls and 5 infra red sensors
+# Node 2 Docks turnout and signls and 5 infra red sensors
 
-This Node leaves a number of pins not used on the Arduino Nano these may get used for platform lighting to be controlled through Jmri
-and using a mosfet to allow high voltage and current than the ardion Nono can provide.
+This node does the same as node 1 but the turnout is 180 degrees the othere way so the setting are different
 
-The turnout servo is on pin 2 it uses slomotion for movement
-
-There is a feedback from the Nano which changes with the servo being thrown or closed by Jmri also on start up a single bit get sent to Jmri so it 
-knows the status of the trunout 
-
-There are 3 TMC 2 aspect signals 
-
-I also use 5 infra-red sensors for spot detection
+One of the spare pins may become a trigger for the mine lift and tunnel lighting in the future.
 
