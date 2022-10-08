@@ -12,3 +12,4 @@ There are 3 TMC 2 aspect signals
 
 I also use 5 infra-red sensors for spot detection
 
+I may add 2 uncouplers to the section using servos these can be added to the sketch very easily if I go ahead with this idea.
