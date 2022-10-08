@@ -14,8 +14,8 @@
 #define CMRI_ADDR 2
 
 // define turnout required positions each turnout will need calibrating
-#define turnout1ClosedPosition 70
-#define turnout1ThrownPosition 108
+#define turnout1ClosedPosition 110
+#define turnout1ThrownPosition 70
 
 // define signal leds turnout 1 pins 0 and 1 rx & tx ADDRESS 1001 USED FOR BIT STATE OF TURNOUT
 #define throughApproachGreenLed 4                 //jmri 2002

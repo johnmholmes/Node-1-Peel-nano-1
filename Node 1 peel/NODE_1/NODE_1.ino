@@ -42,8 +42,7 @@ int turnout1 = 0;
 unsigned long turnoutMoveDelay;
 
 CMRI cmri(CMRI_ADDR, 24, 48); // defaults to a SMINI with address 0. SMINI = 24 inputs, 48 outputs
-Servo turnOut1;
-
+Servo turnout1;
 byte turnout1Position = turnout1ClosedPosition;
 byte turnout1Target   = turnout1ClosedPosition;
 
@@ -75,7 +74,7 @@ void setup() {
 
 void loop() {
   cmri.process();
-  turnout1 = (cmri.get_bit(0)); //turnout 3001 jmri address
+  turnout1 = (cmri.get_bit(0)); //turnout 1001 jmri address
 
   if (turnout1 == 1 && t1state == 0) {
     turnout1Target = turnout1ThrownPosition;   
