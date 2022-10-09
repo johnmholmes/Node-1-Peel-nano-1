@@ -42,7 +42,7 @@ int turnout1 = 0;
 unsigned long turnoutMoveDelay;
 
 CMRI cmri(CMRI_ADDR, 24, 48); // defaults to a SMINI with address 0. SMINI = 24 inputs, 48 outputs
-Servo turnout1;
+Servo turnOut1;
 byte turnout1Position = turnout1ClosedPosition;
 byte turnout1Target   = turnout1ClosedPosition;
 
