@@ -3,7 +3,7 @@
 This Node leaves a number of pins not used on the Arduino Nano these may get used for platform lighting to be controlled through Jmri
 and using a mosfet to allow high voltage and current than the ardion Nono can provide.
 
-The turnout servo is on pin 2 it uses slomotion for movement
+The turnout servo is on pin 2 it uses slomotion for movement which Chris Sharp helped me with
 
 There is a feedback from the Nano which changes with the servo being thrown or closed by Jmri also on start up a single bit get sent to Jmri so it 
 knows the status of the trunout 
