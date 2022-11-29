@@ -1,4 +1,4 @@
-# This repository will now hole all of my nodes used on my layout and may be shown on the youtube channel playlist My Loft Layout
+# This repository will now hold all of my nodes used on my layout and may be shown on the youtube channel playlist My Loft Layout
 
 
 # Node 1 Peel turnout and signls and 5 infra red sensors
