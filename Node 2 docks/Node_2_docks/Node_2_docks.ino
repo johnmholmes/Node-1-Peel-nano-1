@@ -4,7 +4,7 @@
   simple servo cmri node which moves 1 servo and the sends back a bit back to jmri to indicate
   the servo has been moved
   also will control 6 off signal leds
-  it will also read 5 sensors/switchs
+  it will also read 3 sensors/switchs
   Code uses some of Chris Sharps code to add slow motion servo.
 */
 #include <CMRI.h>
@@ -31,8 +31,6 @@
 #define Sensor1 A0                               //jmri 2002
 #define Sensor2 A1                               //jmri 2003
 #define Sensor3 A2                               //jmri 2004
-#define Sensor4 A3                               //jmri 2005
-#define Sensor5 A4                               //jmri 2006
 
 //setup themove speed of servo
 #define turnoutMoveSpeed 20   // [ms] lower number is faster
@@ -61,8 +59,7 @@ void setup() {
   pinMode(Sensor1, INPUT_PULLUP);
   pinMode(Sensor2, INPUT_PULLUP);
   pinMode(Sensor3, INPUT_PULLUP);
-  pinMode(Sensor4, INPUT_PULLUP);
-  pinMode(Sensor5, INPUT_PULLUP);
+
 
   digitalWrite(throughApproachGreenLed, LOW);  // light led 1 on start up  to show its working
   delay(2000);
@@ -100,8 +97,7 @@ void loop() {
   cmri.set_bit(1, !digitalRead(A0));                                        //jmri 2002
   cmri.set_bit(2, !digitalRead(A1));                                        //jmri 2003
   cmri.set_bit(3, !digitalRead(A2));                                        //jmri 2004
-  cmri.set_bit(4, !digitalRead(A3));                                        //jmri 2005
-  cmri.set_bit(5, !digitalRead(A4));                                        //jmri 2006
+
 
   if (turnout1Position != turnout1Target) {
     if (millis() > turnoutMoveDelay) {
