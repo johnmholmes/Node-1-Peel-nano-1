@@ -16,3 +16,5 @@ There are 3 TMC 2 aspect signals
 I also use 5 infra-red sensors for spot detection
 
 I may add 2 uncouplers to the section using servos these can be added to the sketch very easily if I go ahead with this idea.
+
+# Node 2 is for the Docks turnout and again controls 1 Servo and 3 2 aspect signals and 3 infra read sensors not 5 in this case.
