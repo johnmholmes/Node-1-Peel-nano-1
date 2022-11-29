@@ -10,7 +10,7 @@
 #include <CMRI.h>
 #include <Servo.h>
 
-// ddefine node address each node needs its own address
+// define node address each node needs its own address
 #define CMRI_ADDR 1
 
 // define turnout required positions each turnout will need calibrating
